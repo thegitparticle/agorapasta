@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* BYU_RN_TemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BYU_RN_TemplateTests.m */; };
+		00E356F31AD99517003FC87E /* agorapastaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* agorapastaTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2690DA1B26C2D3240045E9E6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2690DA1A26C2D3240045E9E6 /* File.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		D27E66EF315F6B38C796C29F /* libPods-BYU_RN_Template-BYU_RN_TemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 458D65E5C25258C1B9C3A98F /* libPods-BYU_RN_Template-BYU_RN_TemplateTests.a */; };
-		DE5EF9A39ED90659CCDD2D2A /* libPods-BYU_RN_Template.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF1619D768D5364A818BD7 /* libPods-BYU_RN_Template.a */; };
+		D27E66EF315F6B38C796C29F /* libPods-agorapasta-agorapastaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 458D65E5C25258C1B9C3A98F /* libPods-agorapasta-agorapastaTests.a */; };
+		DE5EF9A39ED90659CCDD2D2A /* libPods-agorapasta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF1619D768D5364A818BD7 /* libPods-agorapasta.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,40 +23,42 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = BYU_RN_Template;
+			remoteInfo = agorapasta;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* BYU_RN_TemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BYU_RN_TemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* agorapastaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = agorapastaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* BYU_RN_TemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYU_RN_TemplateTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* agorapastaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = agorapastaTests.m; sourceTree = "<group>"; };
 		0194AB2C48A743599DA635AE /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* BYU_RN_Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BYU_RN_Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BYU_RN_Template/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = BYU_RN_Template/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BYU_RN_Template/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BYU_RN_Template/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BYU_RN_Template/main.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* agorapasta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = agorapasta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = agorapasta/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = agorapasta/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = agorapasta/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = agorapasta/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = agorapasta/main.m; sourceTree = "<group>"; };
 		215D9D20EEAB448795574EBD /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		2690DA1926C2D3230045E9E6 /* agorapasta-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "agorapasta-Bridging-Header.h"; sourceTree = "<group>"; };
+		2690DA1A26C2D3240045E9E6 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		3C47D2973F6E4E1AB6856532 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		3C641C00400B468D88A2A4A9 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		3DABD35EACDA4C9788129544 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		43DF1619D768D5364A818BD7 /* libPods-BYU_RN_Template.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BYU_RN_Template.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		458D65E5C25258C1B9C3A98F /* libPods-BYU_RN_Template-BYU_RN_TemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BYU_RN_Template-BYU_RN_TemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DF1619D768D5364A818BD7 /* libPods-agorapasta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-agorapasta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		458D65E5C25258C1B9C3A98F /* libPods-agorapasta-agorapastaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-agorapasta-agorapastaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C38BD6E9F0E487585F4807A /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		53DF89D6D7904AF299126923 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		5F9D6BC80AB2400A8D73C5B3 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		7F3F69DD2DFD46EBB8937AE8 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		7F8EBB077FC84C1AD7BA03C8 /* Pods-BYU_RN_Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYU_RN_Template.release.xcconfig"; path = "Target Support Files/Pods-BYU_RN_Template/Pods-BYU_RN_Template.release.xcconfig"; sourceTree = "<group>"; };
-		7FC3BC436C7458DF16E85113 /* Pods-BYU_RN_Template-BYU_RN_TemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYU_RN_Template-BYU_RN_TemplateTests.release.xcconfig"; path = "Target Support Files/Pods-BYU_RN_Template-BYU_RN_TemplateTests/Pods-BYU_RN_Template-BYU_RN_TemplateTests.release.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BYU_RN_Template/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F8EBB077FC84C1AD7BA03C8 /* Pods-agorapasta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agorapasta.release.xcconfig"; path = "Target Support Files/Pods-agorapasta/Pods-agorapasta.release.xcconfig"; sourceTree = "<group>"; };
+		7FC3BC436C7458DF16E85113 /* Pods-agorapasta-agorapastaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agorapasta-agorapastaTests.release.xcconfig"; path = "Target Support Files/Pods-agorapasta-agorapastaTests/Pods-agorapasta-agorapastaTests.release.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = agorapasta/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A6EA8598C2A4A6D8C3345B2 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		8FF4B7AD0D12460481672A56 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		ABA73053C64374A58FE26D61 /* Pods-BYU_RN_Template-BYU_RN_TemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYU_RN_Template-BYU_RN_TemplateTests.debug.xcconfig"; path = "Target Support Files/Pods-BYU_RN_Template-BYU_RN_TemplateTests/Pods-BYU_RN_Template-BYU_RN_TemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABA73053C64374A58FE26D61 /* Pods-agorapasta-agorapastaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agorapasta-agorapastaTests.debug.xcconfig"; path = "Target Support Files/Pods-agorapasta-agorapastaTests/Pods-agorapasta-agorapastaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC922E1F45024837A6829C13 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		B22904F235AF4E1FB6D2ED28 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		CED2E992EE97B8308D5EFFE3 /* Pods-BYU_RN_Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYU_RN_Template.debug.xcconfig"; path = "Target Support Files/Pods-BYU_RN_Template/Pods-BYU_RN_Template.debug.xcconfig"; sourceTree = "<group>"; };
+		CED2E992EE97B8308D5EFFE3 /* Pods-agorapasta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agorapasta.debug.xcconfig"; path = "Target Support Files/Pods-agorapasta/Pods-agorapasta.debug.xcconfig"; sourceTree = "<group>"; };
 		EA61BD28DC5F44A99E03BBFE /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F1198CB0D0844072B4D91380 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
@@ -67,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D27E66EF315F6B38C796C29F /* libPods-BYU_RN_Template-BYU_RN_TemplateTests.a in Frameworks */,
+				D27E66EF315F6B38C796C29F /* libPods-agorapasta-agorapastaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,20 +78,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5EF9A39ED90659CCDD2D2A /* libPods-BYU_RN_Template.a in Frameworks */,
+				DE5EF9A39ED90659CCDD2D2A /* libPods-agorapasta.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* BYU_RN_TemplateTests */ = {
+		00E356EF1AD99517003FC87E /* agorapastaTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* BYU_RN_TemplateTests.m */,
+				00E356F21AD99517003FC87E /* agorapastaTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = BYU_RN_TemplateTests;
+			path = agorapastaTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -99,7 +102,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* BYU_RN_Template */ = {
+		13B07FAE1A68108700A75B9A /* agorapasta */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -108,17 +111,19 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				2690DA1A26C2D3240045E9E6 /* File.swift */,
+				2690DA1926C2D3230045E9E6 /* agorapasta-Bridging-Header.h */,
 			);
-			name = BYU_RN_Template;
+			name = agorapasta;
 			sourceTree = "<group>";
 		};
 		1A74AA5E20D5466F038E27ED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CED2E992EE97B8308D5EFFE3 /* Pods-BYU_RN_Template.debug.xcconfig */,
-				7F8EBB077FC84C1AD7BA03C8 /* Pods-BYU_RN_Template.release.xcconfig */,
-				ABA73053C64374A58FE26D61 /* Pods-BYU_RN_Template-BYU_RN_TemplateTests.debug.xcconfig */,
-				7FC3BC436C7458DF16E85113 /* Pods-BYU_RN_Template-BYU_RN_TemplateTests.release.xcconfig */,
+				CED2E992EE97B8308D5EFFE3 /* Pods-agorapasta.debug.xcconfig */,
+				7F8EBB077FC84C1AD7BA03C8 /* Pods-agorapasta.release.xcconfig */,
+				ABA73053C64374A58FE26D61 /* Pods-agorapasta-agorapastaTests.debug.xcconfig */,
+				7FC3BC436C7458DF16E85113 /* Pods-agorapasta-agorapastaTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -127,8 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				43DF1619D768D5364A818BD7 /* libPods-BYU_RN_Template.a */,
-				458D65E5C25258C1B9C3A98F /* libPods-BYU_RN_Template-BYU_RN_TemplateTests.a */,
+				43DF1619D768D5364A818BD7 /* libPods-agorapasta.a */,
+				458D65E5C25258C1B9C3A98F /* libPods-agorapasta-agorapastaTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,9 +148,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* BYU_RN_Template */,
+				13B07FAE1A68108700A75B9A /* agorapasta */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* BYU_RN_TemplateTests */,
+				00E356EF1AD99517003FC87E /* agorapastaTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				1A74AA5E20D5466F038E27ED /* Pods */,
@@ -159,8 +164,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* BYU_RN_Template.app */,
-				00E356EE1AD99517003FC87E /* BYU_RN_TemplateTests.xctest */,
+				13B07F961A680F5B00A75B9A /* agorapasta.app */,
+				00E356EE1AD99517003FC87E /* agorapastaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,9 +196,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* BYU_RN_TemplateTests */ = {
+		00E356ED1AD99517003FC87E /* agorapastaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BYU_RN_TemplateTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "agorapastaTests" */;
 			buildPhases = (
 				21B3BE685FEB2EFF7AC08317 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -207,14 +212,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = BYU_RN_TemplateTests;
-			productName = BYU_RN_TemplateTests;
-			productReference = 00E356EE1AD99517003FC87E /* BYU_RN_TemplateTests.xctest */;
+			name = agorapastaTests;
+			productName = agorapastaTests;
+			productReference = 00E356EE1AD99517003FC87E /* agorapastaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* BYU_RN_Template */ = {
+		13B07F861A680F5B00A75B9A /* agorapasta */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BYU_RN_Template" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "agorapasta" */;
 			buildPhases = (
 				9269B734D6C718CDD9C03BB9 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -229,9 +234,9 @@
 			);
 			dependencies = (
 			);
-			name = BYU_RN_Template;
-			productName = BYU_RN_Template;
-			productReference = 13B07F961A680F5B00A75B9A /* BYU_RN_Template.app */;
+			name = agorapasta;
+			productName = agorapasta;
+			productReference = 13B07F961A680F5B00A75B9A /* agorapasta.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -247,11 +252,11 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BYU_RN_Template" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "agorapasta" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -264,8 +269,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* BYU_RN_Template */,
-				00E356ED1AD99517003FC87E /* BYU_RN_TemplateTests */,
+				13B07F861A680F5B00A75B9A /* agorapasta */,
+				00E356ED1AD99517003FC87E /* agorapastaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -319,7 +324,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BYU_RN_Template-BYU_RN_TemplateTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-agorapasta-agorapastaTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,15 +337,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template-BYU_RN_TemplateTests/Pods-BYU_RN_Template-BYU_RN_TemplateTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-agorapasta-agorapastaTests/Pods-agorapasta-agorapastaTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template-BYU_RN_TemplateTests/Pods-BYU_RN_Template-BYU_RN_TemplateTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-agorapasta-agorapastaTests/Pods-agorapasta-agorapastaTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template-BYU_RN_TemplateTests/Pods-BYU_RN_Template-BYU_RN_TemplateTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-agorapasta-agorapastaTests/Pods-agorapasta-agorapastaTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		401B60E3401398B7EB79E9EB /* [CP] Copy Pods Resources */ = {
@@ -349,15 +354,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template/Pods-BYU_RN_Template-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-agorapasta/Pods-agorapasta-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template/Pods-BYU_RN_Template-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-agorapasta/Pods-agorapasta-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template/Pods-BYU_RN_Template-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-agorapasta/Pods-agorapasta-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		56E6EC17C56D67C58C85B275 /* [CP] Embed Pods Frameworks */ = {
@@ -366,15 +371,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template-BYU_RN_TemplateTests/Pods-BYU_RN_Template-BYU_RN_TemplateTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-agorapasta-agorapastaTests/Pods-agorapasta-agorapastaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template-BYU_RN_TemplateTests/Pods-BYU_RN_Template-BYU_RN_TemplateTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-agorapasta-agorapastaTests/Pods-agorapasta-agorapastaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template-BYU_RN_TemplateTests/Pods-BYU_RN_Template-BYU_RN_TemplateTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-agorapasta-agorapastaTests/Pods-agorapasta-agorapastaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9269B734D6C718CDD9C03BB9 /* [CP] Check Pods Manifest.lock */ = {
@@ -392,7 +397,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BYU_RN_Template-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-agorapasta-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -405,15 +410,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template/Pods-BYU_RN_Template-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-agorapasta/Pods-agorapasta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template/Pods-BYU_RN_Template-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-agorapasta/Pods-agorapasta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BYU_RN_Template/Pods-BYU_RN_Template-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-agorapasta/Pods-agorapasta-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -442,7 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* BYU_RN_TemplateTests.m in Sources */,
+				00E356F31AD99517003FC87E /* agorapastaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				2690DA1B26C2D3240045E9E6 /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +466,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* BYU_RN_Template */;
+			target = 13B07F861A680F5B00A75B9A /* agorapasta */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -468,14 +474,15 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABA73053C64374A58FE26D61 /* Pods-BYU_RN_Template-BYU_RN_TemplateTests.debug.xcconfig */;
+			baseConfigurationReference = ABA73053C64374A58FE26D61 /* Pods-agorapasta-agorapastaTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BYU_RN_TemplateTests/Info.plist;
+				INFOPLIST_FILE = agorapastaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -489,17 +496,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BYU_RN_Template.app/BYU_RN_Template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/agorapasta.app/agorapasta";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FC3BC436C7458DF16E85113 /* Pods-BYU_RN_Template-BYU_RN_TemplateTests.release.xcconfig */;
+			baseConfigurationReference = 7FC3BC436C7458DF16E85113 /* Pods-agorapasta-agorapastaTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = BYU_RN_TemplateTests/Info.plist;
+				INFOPLIST_FILE = agorapastaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -513,19 +521,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BYU_RN_Template.app/BYU_RN_Template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/agorapasta.app/agorapasta";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CED2E992EE97B8308D5EFFE3 /* Pods-BYU_RN_Template.debug.xcconfig */;
+			baseConfigurationReference = CED2E992EE97B8308D5EFFE3 /* Pods-agorapasta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GQ6NVC55SB;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = BYU_RN_Template/Info.plist;
+				INFOPLIST_FILE = agorapasta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -536,7 +545,8 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = BYU_RN_Template;
+				PRODUCT_NAME = agorapasta;
+				SWIFT_OBJC_BRIDGING_HEADER = "agorapasta-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -545,12 +555,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F8EBB077FC84C1AD7BA03C8 /* Pods-BYU_RN_Template.release.xcconfig */;
+			baseConfigurationReference = 7F8EBB077FC84C1AD7BA03C8 /* Pods-agorapasta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = BYU_RN_Template/Info.plist;
+				DEVELOPMENT_TEAM = GQ6NVC55SB;
+				INFOPLIST_FILE = agorapasta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,7 +572,8 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = BYU_RN_Template;
+				PRODUCT_NAME = agorapasta;
+				SWIFT_OBJC_BRIDGING_HEADER = "agorapasta-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -693,7 +705,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BYU_RN_TemplateTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "agorapastaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -702,7 +714,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BYU_RN_Template" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "agorapasta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -711,7 +723,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BYU_RN_Template" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "agorapasta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

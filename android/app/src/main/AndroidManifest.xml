@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.byu_rn_template">
+  package="com.agorapasta">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

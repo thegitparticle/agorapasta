@@ -1,4 +1,4 @@
-package com.byu_rn_template;
+package com.agorapasta;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "BYU_RN_Template";
+    return "agorapasta";
   }
 }
