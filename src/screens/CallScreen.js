@@ -20,13 +20,14 @@ import {useNavigation} from '@react-navigation/native';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-function CallScreen() {
+function CallScreen({route}) {
   const navigation = useNavigation();
+  const {id} = route.params;
 
   const appId = '3203805757c54ff4a384e53869cc1888';
 
   const tempToken =
-    '0063203805757c54ff4a384e53869cc1888IADLBmvk+CbsfXy73zXRbz+XFL9uIRxE0obC9XcSW5xrvDbXzjsAAAAAEACZZ/CeyMETYQEAAQDIwRNh';
+    '0063203805757c54ff4a384e53869cc1888IACsV3RI9HTJSZuAZkkgGlE82lL8IxJs0VYihcvxAewyuzbXzjsAAAAAEADqMKiiiMUbYQEAAQCHxRth';
 
   const channelName = 'chan_1';
 
@@ -54,19 +55,19 @@ function CallScreen() {
       });
 
       engine.addListener('UserJoined', (uid, elapsed) => {
-        console.log('UserJoined', uid, elapsed);
+        // console.log('UserJoined', uid, elapsed);
         if (peerIds.indexOf(uid) === -1) {
           setPeerIds([...peerIds, uid]);
         }
       });
 
       engine.addListener('UserOffline', (uid, reason) => {
-        console.log('UserOffline', uid, reason);
+        // console.log('UserOffline', uid, reason);
         setPeerIds(peerIds.filter(id => id !== uid));
       });
 
       engine.addListener('JoinChannelSuccess', (channel, uid, elapsed) => {
-        console.log('JoinChannelSuccess', channel, uid, elapsed);
+        // console.log('JoinChannelSuccess', channel, uid, elapsed);
         setJoinSucceed(true);
       });
     }
@@ -79,7 +80,7 @@ function CallScreen() {
   async function StartCall() {
     const engine = await RtcEngine.create(appId);
 
-    await engine.joinChannel(tempToken, channelName, null, 0);
+    await engine.joinChannel(tempToken, channelName, null, parseInt(id));
     console.log('start call calling');
   }
 
@@ -100,26 +101,64 @@ function CallScreen() {
       .catch(err => console.log('switchCamera', err));
   }
 
+  const [showCamera, setShowCamera] = useState(true);
+
+  async function ShutCamera() {
+    const engine = await RtcEngine.create(appId);
+    await engine.disableVideo().catch(err => console.log('shut camera', err));
+  }
+
+  async function TurnOnCamera() {
+    const engine = await RtcEngine.create(appId);
+    await engine.enableVideo().catch(err => console.log('turn on camera', err));
+  }
+
+  function ShowCameraButton() {
+    if (showCamera) {
+      return (
+        <TouchableOpacity
+          onPress={() => {
+            ShutCamera();
+            setShowCamera(false);
+          }}
+          style={styles.on_video_button}>
+          <Text style={styles.buttonText}> off cam </Text>
+        </TouchableOpacity>
+      );
+    } else {
+      return (
+        <TouchableOpacity
+          onPress={() => {
+            TurnOnCamera();
+            setShowCamera(true);
+          }}
+          style={styles.on_video_button}>
+          <Text style={styles.buttonText}> on cam </Text>
+        </TouchableOpacity>
+      );
+    }
+  }
+
   function SwitchRender() {
     setSwitchRender(!switchRender);
   }
 
   function RenderRemoteVideos() {
     if (peerIds.length > 0) {
+      console.log(peerIds);
       return (
-        <ScrollView
-          style={styles.remoteContainer}
-          contentContainerStyle={{paddingHorizontal: 2.5}}
-          horizontal={true}>
-          {peerIds.map(value => {
-            <RtcRemoteView.SurfaceView
-              style={styles.remote}
-              uid={value}
-              channelId={channelName}
-              renderMode={VideoRenderMode.Hidden}
-              zOrderMediaOverlay={true}
-            />;
-          })}
+        <ScrollView style={styles.remoteContainer}>
+          {peerIds.map((value, index) => (
+            <View style={styles.remote_max_view}>
+              <RtcRemoteView.SurfaceView
+                style={styles.remote_max}
+                uid={value}
+                channelId={channelName}
+                renderMode={VideoRenderMode.Hidden}
+                zOrderMediaOverlay={true}
+              />
+            </View>
+          ))}
         </ScrollView>
       );
     } else {
@@ -133,11 +172,18 @@ function CallScreen() {
       return (
         <View style={styles.fullView}>
           <RtcLocalView.SurfaceView
-            style={styles.max}
+            style={styles.local_max_view}
             channelId={channelName}
             // renderMode={VideoRenderMode.Hidden}
-          />
-          <RenderRemoteVideos />
+          >
+            <TouchableOpacity
+              onPress={() => SwitchCamera()}
+              style={styles.on_video_button}>
+              <Text style={styles.buttonText}> switch cam </Text>
+            </TouchableOpacity>
+            <ShowCameraButton />
+          </RtcLocalView.SurfaceView>
+          {/* <RenderRemoteVideos /> */}
         </View>
       );
     } else {
@@ -170,20 +216,30 @@ function CallScreen() {
 export default CallScreen;
 
 const styles = StyleSheet.create({
-  container_view: {
-    flex: 1,
-    backgroundColor: '#EAEAEA',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   default_text: {fontSize: 17, color: '#333333'},
   max: {
     flex: 1,
+    backgroundColor: '#090909',
+  },
+  remote_max: {
+    height: 200,
+    width: 200,
+    backgroundColor: 'pink',
+  },
+  remote_max_view: {
+    height: 230,
+    width: 230,
+    backgroundColor: 'pink',
+  },
+  local_max_view: {
+    flex: 1,
+    backgroundColor: '#090909',
+    alignItems: 'center',
   },
   buttonHolder: {
     height: 100,
     alignItems: 'center',
-    flex: 1,
+    // flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-evenly',
   },
@@ -191,6 +247,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
     backgroundColor: '#0093E9',
+    borderRadius: 25,
+  },
+  on_video_button: {
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    backgroundColor: '#0093E915',
+    width: 100,
     borderRadius: 25,
   },
   buttonText: {
@@ -201,10 +264,13 @@ const styles = StyleSheet.create({
     height: windowHeight - 100,
   },
   remoteContainer: {
-    width: '100%',
-    height: 150,
-    position: 'absolute',
-    top: 5,
+    flex: 1,
+    backgroundColor: 'tomato',
+    borderRadius: 5,
+    borderWidth: 10,
+    borderColor: 'aliceblue',
+    // position: 'absolute',
+    // top: 5,
   },
   remote: {
     width: 150,
