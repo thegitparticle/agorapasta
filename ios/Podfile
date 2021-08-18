@@ -17,12 +17,22 @@ target 'agorapasta' do
   pod 'react-native-agora', :path => '../node_modules/react-native-agora'
 
   pod 'react-native-twilio-video-webrtc', path: '../node_modules/react-native-twilio-video-webrtc'
+	
+	pod 'AGEVideoLayout', '~> 1.0.2'
 
 
   target 'agorapastaTests' do
     inherit! :complete
     # Pods for testing
   end
+	
+	target 'Agora-ScreenShare-Extension' do
+		use_native_modules!
+#		use_frameworks!
+
+			pod 'AgoraRtcEngine_iOS', '~> 3.4.6'
+			pod 'AGEVideoLayout', '~> 1.0.2'
+	end
 
   # Enables Flipper.
   #
@@ -32,5 +42,13 @@ target 'agorapasta' do
 
   post_install do |installer|
     react_native_post_install(installer)
+		installer.pods_project.targets.each do |target|
+				target.build_configurations.each do |config|
+					config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
+				end
+			end
   end
 end
+
+
+
