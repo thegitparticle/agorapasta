@@ -27,7 +27,7 @@ function CallScreen({route}) {
   const appId = '3203805757c54ff4a384e53869cc1888';
 
   const tempToken =
-    '0063203805757c54ff4a384e53869cc1888IACsV3RI9HTJSZuAZkkgGlE82lL8IxJs0VYihcvxAewyuzbXzjsAAAAAEADqMKiiiMUbYQEAAQCHxRth';
+    '0063203805757c54ff4a384e53869cc1888IABIzYEKRPdh2o1VZNOHy721I0qjH0oKFigcURPEkvwzCjbXzjsAAAAAEAA4tIbZqwceYQEAAQCrBx5h';
 
   const channelName = 'chan_1';
 
@@ -183,7 +183,7 @@ function CallScreen({route}) {
             </TouchableOpacity>
             <ShowCameraButton />
           </RtcLocalView.SurfaceView>
-          {/* <RenderRemoteVideos /> */}
+          <RenderRemoteVideos />
         </View>
       );
     } else {
