@@ -202,6 +202,8 @@ dependencies {
 
     implementation project(':react-native-twilio-video-webrtc')
 
+    implementation 'com.yanzhenjie:permission:2.0.3'
+
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'
     }

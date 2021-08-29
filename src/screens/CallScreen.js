@@ -24,12 +24,12 @@ function CallScreen({route}) {
   const navigation = useNavigation();
   const {id} = route.params;
 
-  const appId = '3203805757c54ff4a384e53869cc1888';
+  const appId = '5de5dd821ca244599496505f2481b447';
 
   const tempToken =
-    '0063203805757c54ff4a384e53869cc1888IABIzYEKRPdh2o1VZNOHy721I0qjH0oKFigcURPEkvwzCjbXzjsAAAAAEAA4tIbZqwceYQEAAQCrBx5h';
+    '0065de5dd821ca244599496505f2481b447IAD8WnxXDDZqLTE4PgArzfKU2Cq4mrg0no71yhWozMEJ0tAL/5gAAAAAEAA8nW45m8QsYQEAAQCaxCxh';
 
-  const channelName = 'chan_1';
+  const channelName = 'chan';
 
   const [joinSucceed, setJoinSucceed] = useState(false);
 
